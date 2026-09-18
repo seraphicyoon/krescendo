@@ -21,7 +21,7 @@ Tienda demo responsive de K-pop merch, lista para desplegar como sitio estático
 7. Abre /admin.html en tu dominio.
 
 El panel permite crear, editar y eliminar productos, cambiar stock, administrar preventas y categorías.
-# Krescendo V12
+# Krescendo V14
 
 La tienda incluye catálogo, portada fotográfica editable desde administración, reseñas, registro exclusivo mediante claves de invitación, bolsa persistente y checkout por transferencia bancaria.
 
