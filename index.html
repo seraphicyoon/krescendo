@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <div class="announcement">Envío gratis en México en compras desde $1,499 <span>✦</span> Preventas con pagos protegidos</div>
@@ -29,18 +29,15 @@
   <main id="inicio">
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">THE COMEBACK EDIT</span>
+        <span class="eyebrow">NOVEDADES K-POP</span>
         <h1>Tu colección,<br><em>en crescendo.</em></h1>
         <p>Álbumes, lightsticks y goods oficiales seleccionados para fans que cuidan cada detalle.</p>
         <div class="hero-cta"><a class="primary" href="#stock">Ver novedades</a><a class="secondary" href="#preventa">Explorar preventas →</a></div>
         <div class="proof"><span>✓ Productos oficiales</span><span>✓ Empaque protegido</span><span>✓ Envíos a todo México</span></div>
       </div>
-      <div class="hero-art" aria-label="Selección destacada de K-pop merch">
-        <div class="orb one"></div><div class="orb two"></div>
-        <div class="album a1"><span>NEWJEANS</span><strong>Get Up</strong><i>2nd EP</i></div>
-        <div class="album a2"><span>aespa</span><strong>Armageddon</strong><i>1st Album</i></div>
-        <div class="lightstick"><div></div><i></i></div>
-        <span class="spark s1">✦</span><span class="spark s2">✧</span>
+      <div class="hero-art" aria-label="Imagen destacada de Krescendo">
+        <img id="heroImage" alt="Colección destacada de K-pop" hidden>
+        <div id="heroPlaceholder" class="hero-placeholder"><img src="krescendo-logo.png" alt=""><span>Próximamente una nueva colección</span></div>
       </div>
     </section>
 
@@ -70,7 +67,7 @@
   <aside id="cart" aria-hidden="true"><div><h2>Tu bolsa <button id="closeCart" aria-label="Cerrar">×</button></h2><div id="cartItems"><p class="empty">Tu bolsa está esperando su primer favorito ♡</p></div></div><div class="cart-bottom"><div><span>Subtotal</span><b id="subtotal">$0 MXN</b></div><button>Continuar compra</button><small>Envío calculado al finalizar</small></div></aside><div id="overlay"></div>
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="config.js?v=10"></script>
-  <script src="app.js?v=10"></script>
+  <script src="config.js?v=12"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>

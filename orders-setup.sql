@@ -3,6 +3,20 @@
 
 create extension if not exists pgcrypto;
 
+create table if not exists public.site_settings (
+  id text primary key,
+  hero_image_url text,
+  updated_at timestamptz not null default now()
+);
+alter table public.site_settings enable row level security;
+drop policy if exists "Public reads site settings" on public.site_settings;
+drop policy if exists "Store admin manages site settings" on public.site_settings;
+create policy "Public reads site settings" on public.site_settings for select using (true);
+create policy "Store admin manages site settings" on public.site_settings for all to authenticated
+  using ((auth.jwt() ->> 'email') = 'yoonmendo@gmail.com')
+  with check ((auth.jwt() ->> 'email') = 'yoonmendo@gmail.com');
+insert into public.site_settings(id) values('main') on conflict(id) do nothing;
+
 create table if not exists public.invite_codes (
   id uuid primary key default gen_random_uuid(),
   code text not null unique,
