@@ -21,3 +21,14 @@ Tienda demo responsive de K-pop merch, lista para desplegar como sitio estático
 7. Abre /admin.html en tu dominio.
 
 El panel permite crear, editar y eliminar productos, cambiar stock, administrar preventas y categorías.
+# Krescendo V10
+
+La tienda incluye catálogo, panel administrativo, reseñas, registro exclusivo mediante claves de invitación, bolsa persistente y checkout por transferencia bancaria.
+
+## Activar pedidos
+
+1. Ejecuta `orders-setup.sql` completo en Supabase > SQL Editor. También activa las invitaciones de un solo uso.
+2. Edita los datos de transferencia dentro de `dist/config.js`, en la sección `bank`.
+3. Sube el contenido de `dist` a la raíz de GitHub y deja los archivos SQL como respaldo.
+
+La función SQL calcula los precios desde la base de datos y descuenta existencias. Nunca confía en el total enviado por el navegador.
