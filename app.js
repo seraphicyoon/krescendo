@@ -12,3 +12,10 @@ function saveCart(){localStorage.setItem('krescendo_cart',JSON.stringify(cart))}
 grid.addEventListener('click',function(e){if(e.target.dataset.product)setTimeout(saveCart,0)});
 document.querySelector('#loginBtn').onclick=function(){location.href='account.html'};
 document.querySelector('.cart-bottom>button').onclick=function(){if(!cart.length){notify('Tu bolsa está vacía');return}saveCart();location.href='checkout.html'};
+
+const yesstyleWhatsapp=document.querySelector('#yesstyleWhatsapp');
+if(yesstyleWhatsapp){
+  const whatsappNumber=String(cfg.whatsappNumber||'').replace(/\D/g,'');
+  const whatsappMessage=encodeURIComponent('Hola Krescendo ✨ Quiero cotizar mi carrito de YesStyle con el 50% de descuento. Te envío la captura de mi carrito.');
+  yesstyleWhatsapp.href='https://wa.me/'+whatsappNumber+'?text='+whatsappMessage;
+}
