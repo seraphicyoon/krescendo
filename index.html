@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=13" />
+  <link rel="stylesheet" href="styles.css?v=21" />
 </head>
 <body>
   <div class="announcement">Envío gratis en México en compras desde $1,499 <span>✦</span> Preventas con pagos protegidos</div>
@@ -17,7 +17,7 @@
     <a class="brand" href="#inicio"><img src="krescendo-logo.png" alt="Krescendo" /></a>
     <button class="menu" aria-label="Abrir menú">☰</button>
     <nav aria-label="Navegación principal">
-      <a href="#stock">En stock</a><a href="#preventa">Preventa</a><a href="#kgoods">KGOODS</a><a href="#kposter">KPOSTER</a><a href="#reviews">Reviews</a>
+      <a href="#stock">En stock</a><a href="#preventa">Preventa</a><a href="#kgoods">KGOODS</a><a href="#kposter">KPOSTER</a><a href="#yesstyle">YesStyle</a><a href="#reviews">Reviews</a>
     </nav>
     <div class="actions">
       <button class="icon" id="searchBtn" aria-label="Buscar">⌕</button>
@@ -58,16 +58,37 @@
       <article id="kposter"><span>02</span><div><small>WALL OF FAME</small><h2>KPOSTER</h2><p>Posters oficiales para completar tu espacio.</p><button data-category="poster">Ver colección →</button></div></article>
     </section>
 
+    <section class="yesstyle" id="yesstyle">
+      <div class="yesstyle-copy">
+        <span class="eyebrow">PEDIDOS POR ENCARGO</span>
+        <div class="yesstyle-offer"><strong>50%</strong><span>DE DESCUENTO<br>EN YESSTYLE</span></div>
+        <h2>Tu carrito,<br><em>nosotras lo cotizamos.</em></h2>
+        <p>Arma tu carrito en YesStyle, toma una captura y envíanosla por WhatsApp. Revisamos tus artículos y te compartimos el precio final antes de confirmar el pedido.</p>
+        <a class="yesstyle-whatsapp" id="yesstyleWhatsapp" href="#" target="_blank" rel="noopener">Enviar mi carrito por WhatsApp <span>↗</span></a>
+        <small>Compra exclusiva por pedido. La cotización final considera disponibilidad y cargos aplicables. Krescendo no está afiliado a YesStyle.</small>
+      </div>
+      <div class="yesstyle-process">
+        <div class="yesstyle-status"><i></i> Ya vienen pedidos en camino</div>
+        <span class="yesstyle-kicker">CÓMO FUNCIONA</span>
+        <ol>
+          <li><b>01</b><div><strong>Arma tu carrito</strong><span>Elige tus favoritos directamente en YesStyle.</span></div></li>
+          <li><b>02</b><div><strong>Toma una captura</strong><span>Asegúrate de que se vean los productos y cantidades.</span></div></li>
+          <li><b>03</b><div><strong>Envíala por WhatsApp</strong><span>Nosotras revisamos disponibilidad y descuento.</span></div></li>
+          <li><b>04</b><div><strong>Recibe tu cotización</strong><span>Te confirmamos el precio final antes de ordenar.</span></div></li>
+        </ol>
+      </div>
+    </section>
+
     <section class="reviews" id="reviews"><div class="section-head"><div><span class="eyebrow">FAN-APPROVED</span><h2>Reviews de la comunidad</h2></div><div class="score"><b id="reviewAverage">5.0</b><span>★★★★★<small id="reviewCount">Reseñas verificadas</small></span></div></div><div class="review-grid" id="reviewGrid"><blockquote>“El empaque llegó precioso y el álbum impecable.”<footer>— Sofía M. · compra verificada</footer></blockquote></div></section>
   </main>
 
-  <footer class="footer"><img src="krescendo-logo.png" alt="Krescendo"><p>K-pop merch para hacer crecer tu colección.</p><div><a href="#stock">Tienda</a><a href="#preventa">Preventas</a><a href="#reviews">Reviews</a><a href="mailto:hola@krescendo.mx">Contacto</a></div><small>© 2026 Krescendo. Hecho con ♡ para fans.</small></footer>
+  <footer class="footer"><img src="krescendo-logo.png" alt="Krescendo"><p>K-pop merch para hacer crecer tu colección.</p><div><a href="#stock">Tienda</a><a href="#preventa">Preventas</a><a href="#yesstyle">YesStyle</a><a href="#reviews">Reviews</a><a href="mailto:hola@krescendo.mx">Contacto</a></div><small>© 2026 Krescendo. Hecho con ♡ para fans.</small></footer>
 
   <dialog id="loginModal"><button class="close" aria-label="Cerrar">×</button><img src="krescendo-logo.png" alt="Krescendo"><h2>Qué gusto verte</h2><p>Ingresa para consultar pedidos y tus favoritos.</p><form id="loginForm"><label>Correo electrónico<input type="email" required placeholder="tu@correo.com"></label><label>Contraseña<input type="password" required minlength="8" placeholder="••••••••"></label><button class="primary" type="submit">Iniciar sesión</button><button class="forgot" type="button">¿Olvidaste tu contraseña?</button></form><small>¿Aún no tienes cuenta? <button type="button">Crear cuenta</button></small></dialog>
   <aside id="cart" aria-hidden="true"><div><h2>Tu bolsa <button id="closeCart" aria-label="Cerrar">×</button></h2><div id="cartItems"><p class="empty">Tu bolsa está esperando su primer favorito ♡</p></div></div><div class="cart-bottom"><div><span>Subtotal</span><b id="subtotal">$0 MXN</b></div><button>Continuar compra</button><small>Envío calculado al finalizar</small></div></aside><div id="overlay"></div>
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="config.js?v=13"></script>
-  <script src="app.js?v=13"></script>
+  <script src="config.js?v=21"></script>
+  <script src="app.js?v=21"></script>
 </body>
 </html>
