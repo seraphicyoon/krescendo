@@ -2,6 +2,7 @@ window.KRESCENDO_CONFIG = {
   supabaseUrl: "https://ltkwtqmsretsnynqitic.supabase.co",
   supabaseAnonKey: "sb_publishable_9HklfglvEwdFd4GoVBGcOw_nGchywQs",
   adminEmail: "yoonmendo@gmail.com",
+  whatsappNumber: "",
   bank: {
     bankName: "NOMBRE DEL BANCO",
     beneficiary: "NOMBRE DEL BENEFICIARIO",
